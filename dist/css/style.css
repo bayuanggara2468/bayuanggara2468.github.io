@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(../../image/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navigation{
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+}
+
+.navigation .box-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(1) h1{
+    font-size: 38px;
+    color: #eaeaea;
+    cursor: pointer;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li {
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: all .5s ease;
+    
+}
+
+.container .box-navigation .box h1:hover {
+    color: rgba(172, 255, 47, 0.822);
+    transition: all .5s ease;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:hover{
+    color: greenyellow;
+}
+
+.navigation .box-navigation .box:nth-child(3){
+    display: none;
+}
+
+.navigation .box-navigation .box:nth-child(2)  ul li i{
+    display: none;
+}
+
+
+/* HERO STLE */
+header .hero{
+    position: absolute;
+     top: 50%;
+     right: 50%;
+     transform: translate(50%, -50%);
+}
+
+header .hero h1{
+    color: #eaeaea80;
+    font-size: 40px;
+    text-align: center;
+}
+/* HERO STYLE SELESAi */
+
+/* ABOUT STYLE */
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f4f3ee;
+}
+
+.about .box:nth-child(1){
+    padding-right: 30px;
+}
+
+.about .box-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .box-about:nth-child(1) h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.about .box-about:nth-child(1) p{
+    line-height: 2;
+}
+
+.about .box:nth-child(2) img {
+    border-radius: 20px;
+    width: 600px;
+}
+/* ABOUT STYLE SELESAI */
+
+/* FAMOUS SYLE */
+.famous{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #013a1b
+}
+
+.famous .box-famous {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.famous .box-famous .box {
+    justify-content: center;
+    text-align: center;
+    margin : 20px 0;
+    margin-inline: 20px;
+    color: #eaeaea;
+}
+
+.famous .box-famous .box img {
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.box-famous .box h1 {
+    margin-bottom: 10px;
+}
+
+/* FAMOUS STYLE SELESAI */
+
+/* GALLERY STYLE */
+.gallery{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.gallery .box-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-gallery img {
+    height: 200px;
+    width: 300px;
+    margin: 15px;
+}
+/* GALERY STYLE SELESAI */
+
+/* STYLE CONTACT */
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #2b2d42;
+}
+
+.contact .box-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact .box-contact h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #eaeaea;
+}
+
+.contact .box-contact form table tr {
+    display:  flex;
+    flex-direction: column;
+}
+
+.contact .box-contact form table tr td label {
+    font-size: 20px;
+    font-weight: 300px;
+    color: #eaeaea;
+}
+
+.contact .box-contact form table tr:nth-child(1) td input:nth-child(1) {
+    padding: 15px 100px 15px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact .box-contact form table tr:nth-child(2) td input{
+   padding: 15px 120px 15px 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.contact .box-contact form table tr td textarea{
+    margin-top: 10px;
+    margin-bottom:20px;
+    padding: 15px 200px 120px 20px;
+}
+/* STYLE CONTACT SELESAI */
+
+/* STYLE FOOTER */
+footer{
+   text-align: center;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #f4f3ee;
+}
+
+/* STYLE FOOTER SELESAI */
+
+/* MEDIA QUERY 1200PX */
+@media screen and (max-width :1200px) {
+    .about{
+        height: 600px;
+    }
+    
+    .about .box-about .box:nth-child(2) img{
+        width: 500px;
+    }
+
+    .famous .box-famous .box img {
+        width: 250px;
+    }
+}
+/* MEDIA QUERY 1200PX SELESAI */
+
+/* MEDIA QUERY 990PX */
+@media screen and (max-width : 990px) {
+    .navigation .box-navigation .box:nth-child(2){
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        background-color: white;
+        width: 200px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+
+    .navigation .box-navigation .menu-navigation.menu-active{
+        opacity: 1;
+        top: 50px;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul {
+        flex-direction: column;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li i{
+        margin-inline: 10px;
+        font-size: 22;
+        display: inline-block;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li a{
+        color: black;
+    }
+
+    .navigation .box-navigation .box:nth-child(3){
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) i {
+        font-size: 28px;
+    }
+
+    header .hero h1{
+        font-size: 35px;
+    }
+
+    .about .box-about {
+        flex-direction: column-reverse;
+    }
+
+    .about .box-about .box:nth-child(1){
+        margin-top:30px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .about .box-about .box:nth-child(1) h1 {
+        font-size: 32px;
+    }
+
+    .about .box-about .box:nth-child(2) img {
+        width: 400px;
+    }
+
+    .famous {
+        height: 100%;
+        margin-top: 0px;
+    }
+
+    .famous .box-famous {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+
+    .famous .box-famous .box img{
+        width: 400px;
+    }
+}
+
+/* MEDIA QUERY 990PX SELESAI */
+
+/* MEDAI QUERY 750PX */
+@media  screen and (max-width : 750px) {
+    header .hero h1{
+        font-size: 25px;
+    }
+
+    .about {
+        height: 600px;
+    }
+
+    .gallery {
+        height: 100%;
+        margin: 50px 0 50px 0;
+    }
+
+    .contact .box-contact{
+      flex-direction: column;
+    }
+
+    .contact .box-contact h1 {
+      margin-bottom: 50px;
+    }
+
+    .contact{
+      height: 100%;
+      padding: 100px 0px 100px 0px;
+    }
+}
+/* MEDIA QUERY 750 SELESAI */
+
+/* MEDIA QUERY 575PX */
+@media screen and (max-width : 575px) {
+    .about .box-about .box:nth-child(2) img {
+        width: 300px;
+    }
+
+    .about .box-about .box:nth-child(1) h1 {
+        font-size: 25px;
+    }
+
+    .about .box-about .box:nth-child(1) p{
+        font-size: 14px;
+    }
+
+    .about{
+        height: 500px;
+    }
+
+    .famous .box-famous .box img {
+        width: 300px;
+    }
+
+    .famous .box-famous .box p {
+        font-size: 14px;
+    }
+
+    .contact .box-contact form table tr:nth-child(1) td input:nth-child(1){
+      padding: 10px 50px 15px 20px;
+    }
+    
+    .contact .box-contact form table tr:nth-child(2) td input{
+      padding: 10px 80px 15px 20px;
+    }
+    
+    .contact .box-contact form table tr td textarea{
+      padding: 10px 150px 100px 20px;
+    }
+
+    .contact .box-contact h1 {
+      font-size: 40px;
+    }
+
+    .contact .box-contact form table tr td label {
+      font-size: 18px;
+    }
+    
+}
+/* MEDIA QUERY 575PX SELESAI */
+
+/* MEDIA QUERY 475PX */
+@media screen and (max-width :475px) {
+    .about {
+        height: 520px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .about .box-about .box-about:nth-child(1) h1 {
+        font-size: 28px;
+    }
+
+    .about .box-about .box-about:nth-child(1) p {
+        font-size: 12px;
+    }
+
+    .about .box-about .box:nth-child(2) img {
+        width: 300px;
+    }
+
+}
+/* MEDIA QUERY 475 SELEAI */
+
+/* MEDIA QUERY 390PX */
+@media screen and (max-width: 390px) {
+
+    .about{
+        height: 540px;
+    }
+
+    .about .box-about .box-about:nth-child(1) h1 {
+        font-size: 24px;
+    }
+
+    .about .box-about .box-about:nth-child(1) p {
+        font-size: 10px;
+    }
+
+    .about .box-about .box:nth-child(2) img {
+        width: 250px;
+    }
+
+    .famous .box-famous .box img {
+        width: 250px;
+    }
+}
+/* MEDIA QUERY 390PX SELESAI*/ 
+
